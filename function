@@ -1,0 +1,20 @@
+// program to understand the function and recursion
+#include <stdio.h>
+void display();  //fucntion prototype
+int raaghav();
+int main() {
+    display();  //function call
+    
+    raaghav();
+    return 0;
+}
+
+void display(){   //function definiton
+    
+    printf("you have created a program  to initialize the function in the program \n");
+}
+
+int raaghav(){
+    
+    printf("thank you");
+}
