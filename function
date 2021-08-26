@@ -1,6 +1,6 @@
 // program to understand the function and recursion
 #include <stdio.h>
-void display();  //fucntion prototype
+void display();  //function prototype
 int raaghav();
 int main() {
     display();  //function call
