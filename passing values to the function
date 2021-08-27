@@ -1,0 +1,20 @@
+#include<stdio.h>
+//sum is the function which takes a and b as input and  returns an integer as output
+int sum(int a,int b);  //function prototype
+//has paramter and it returns the value to the main functon
+
+int main(){
+    int a;
+    a=sum(5,6);             //function call
+    printf("%d",a);
+    
+return 0;
+    
+}
+
+
+int sum(int a,int b){ // function definition
+    int result;
+    result=a+b;
+    return result;
+}
