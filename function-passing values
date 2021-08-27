@@ -18,3 +18,62 @@ int sum(int a,int b){ // function definition
     result=a+b;
     return result;
 }
+
+// passing the values in te system
+#include<stdio.h>
+int raghav(int a,int b);  //function prototype
+
+
+int main(){
+    int c;
+    
+    c=raghav(2,6);
+    printf("%d",c);
+    
+    return 0;
+    
+}
+
+
+
+int raghav(int a,int b){  // parameters
+    int raghav;
+    raghav=a+b*b;
+    
+    return raghav;
+    
+}
+
+//*****************THIS PROGRAM TELLS US ABOUT THE DIFFERENCE BETWEEN PARAMETER AND VARIABLE***********************
+
+//if i didn't gave the variable to the function call
+
+#include<stdio.h>
+int RAM(int a);  //function prototype
+int main(){
+    int a,b;
+    a=335;
+    RAM(a);// function call
+    printf("%d",a);
+    return 0;
+}
+int RAM(int a){//function definition with parameters
+    a=35;
+    return a;
+}
+
+//IF I PUT THE VARIABLE TO THE FUNCTION CALL
+//THE PARAMETER IS DIFFERENT THAN THE VARAIBLE WE GIVE INSIDE THE MAIN FUNCTION main();
+#include<stdio.h>
+int RAM(int a);  //function prototype
+int main(){
+    int a,b;
+    a=335;  // variable a of the main is totally different than user defined function****RV****
+    b=RAM(a);// function call
+    printf("%d",b);
+    return 0;
+}
+int RAM(int a){//function definition with parameters****RV****
+    a=35;
+    return a;
+}
