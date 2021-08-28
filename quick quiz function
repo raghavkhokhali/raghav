@@ -24,6 +24,8 @@ return avg;
     
     
 }
+
+
 //the qn is to figure out the celsius to fahreneit
 #include<stdio.h>
 float temperature(float a);//function prototype
