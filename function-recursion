@@ -1,0 +1,26 @@
+//to find the factorial of the number
+#include<stdio.h>
+int raghav(int a);  // function prototype
+int main(){
+    int a;
+    printf("Enter the value of factorial;");
+    scanf("%d",&a); 
+    printf("The value of the factorial %d! is %d" ,a,raghav(a));
+    // function call in the library function
+    
+    
+    
+    
+    
+    return 0;
+}
+int raghav(int a){          //function definition
+    if (a==1 || a==0){
+        return 1;  // as the factorial of 1 and 0 is 1 ;
+        //!1 || 0!! =1
+    }
+    else{
+        return a * raghav(a-1);
+}
+}
+
