@@ -1,0 +1,37 @@
+//using loops
+#include<stdio.h>
+
+int main(){
+    int a,i,f=1;
+    printf("enter the value of the factorial you wanna factorise \n");
+    scanf("%d",&a);
+    for(i=1;i<=a;i++){
+        f=f*i; // the factorial is getting divided with the help of the loops
+        
+        
+    }
+    printf("%d",f);
+    return 0;
+}
+
+//using recursion
+#include<stdio.h>
+int factorial(int a); //function prototype
+int main(){
+    int a;
+    printf("enter the value of the number you want to n factorise");
+    scanf("%d",&a);
+    printf("the value of the factorial %d ! is %d",a,factorial(a));
+    
+    
+    return 0;
+}
+int factorial(int a){   //function definition
+    if(a==1 || a==0){
+        return 1;
+    }
+    else{
+        return a* factorial(a-1);
+    }
+    
+}
