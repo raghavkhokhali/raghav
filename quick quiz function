@@ -47,7 +47,34 @@ float temperature(float a){ // function defintion
     fahrenheit=(float)(a*9/5)+32;
     return fahrenheit;
 }
+
+
+// function quick quiz 03
+// Write a function to calculate the force of attraction on a body of mass m exerted by earth. (g=9.8m/S2)
+
+#include<stdio.h>
+float force(float mass); // function ptototype
+
+
+int main(){
+    float mass;
+    printf("enter the value of the mass");
+    scanf("%f",&mass);
+    printf("The force of the mass %f is %f",mass,force(mass));
     
+    
+    
+    return 0;
+}
+float force(float mass){
+    float result;
+    result=(float)mass*9.81;
+    return result;
+}
+
+
+    
+
     
 
 
