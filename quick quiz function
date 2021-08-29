@@ -60,7 +60,7 @@ int main(){
     float mass;
     printf("enter the value of the mass");
     scanf("%f",&mass);
-    printf("The force of the mass %f is %f",mass,force(mass));
+    printf("The force of the mass %f is %.2f",mass,force(mass));
     
     
     
