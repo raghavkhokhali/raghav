@@ -102,6 +102,18 @@ int fibonacci(int a){
   return 0;
 }
 
+
+// what will be the following lne produce in a C program printf("%d%d%d%d\n",a,++a,a++);
+#include<stdio.h>
+ 
+    int main() {
+        int a=0;
+        printf("%d%d%d",a,++a,a++);// it depends on thr way of the compiler
+        //++a = it does increment at 1st and then print
+        //a++=it does print then increment
+    
+        return 0;
+}
     
 
     
