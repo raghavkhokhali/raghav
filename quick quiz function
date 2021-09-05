@@ -114,8 +114,41 @@ int fibonacci(int a){
     
         return 0;
 }
-    
 
+//  to run the pattern
+?* 
+*
+***
+*****   in the odd form
+*/
+    
+#include<stdio.h>
+ int pattern(int n); // function prototype
+
+            int main(){
+       int n;
+       printf("enter the value :");
+       scanf("%d",&n);
+     pattern(n);
+              return 0;
+}
+
+int pattern(int n){
+       int i;
+       if(n==1){
+              printf("*\n");
+              return 0;
+              
+       }
+       pattern(n-1);
+       for(i=0;i<(2*n-1);i++){
+              printf("*");
+       }
+       printf("\n");
+       
+
+      
+}
     
 
 
