@@ -1,0 +1,56 @@
+// this is to swap the number using pointer
+#include<stdio.h>
+ void Swap(int *a,int *b); // function prototype
+    int main(){
+        int x,y;
+        printf("enter the value of x and y respectively");
+        scanf("%d%d",&x,&y);
+     Swap(&x,&y);     // function call
+        printf("the value of the x and y is to be given as %d and %d",x,y);
+   
+        return 0;
+
+}
+
+void Swap(int *a,int *b){   // function definition
+int temp;
+temp=*a;
+*a=*b;
+*b=temp;
+}
+
+
+
+//this is to print the value and the address of the number.
+#include<stdio.h>
+ 
+    int main(){
+    int a=5;
+    int *ptr;
+    ptr=&a;
+    printf("the value of the letter is %u\n",a);
+    printf("the value of the address of the %u \n",ptr);
+    printf("the value of the a is %u \n",*ptr);
+        return 0;
+}
+
+//Write a program having a variable i. Print the address of i. Pass this 
+//variable to a function and print its address. Are these addresses same? Why?
+
+/* the address of both did not came up same in the function definition and
+in the main function because the value of the function call and the address of the asssgined
+call by value is different in the memory.
+*/
+
+#include<stdio.h>
+ void add(int a){
+     printf("the address of the variable a is %u",&a);
+
+ }
+    int main() {
+    int i=4;
+    printf("the value of the i is %d",i);
+add(i);
+printf("the address of the number is %u",&i);
+        return 0;
+}
