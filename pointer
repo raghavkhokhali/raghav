@@ -54,3 +54,34 @@ add(i);
 printf("the address of the number is %u",&i);
         return 0;
 }
+
+//Write a program to change the value of a 
+//variable to ten times its current value.
+// Write a function and pass the value by reference.
+/*#include<stdio.h>
+ int times(int a){
+
+     return 10*a;
+ }
+    int main() {
+    int a=2;
+    printf("the value of the given vairable is %d",a);
+    printf("the value of the numbe is %u",times(a));
+        return 0;
+}*/// this is call by value method
+
+//this is for the call by reference
+#include<stdio.h>
+ int times(int *i){     // function definition
+int a=*i*10;
+return a;
+
+
+
+ }
+    int main() {
+    int i=2;
+    printf("the value that is given to us is i:%d",i);
+    printf("the value of the i into tentimes is:%u", times(&i));
+        return 0;
+}
